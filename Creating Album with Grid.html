@@ -1,0 +1,137 @@
+<!-- Creating Album with Grid -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creating Album with Grid</title>
+    <style>
+        .container
+        {
+            height: 700px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+           
+
+        }
+        .box
+        {
+            /* height: 100px;
+            width: 100px;*/
+            
+        } 
+        .box1
+        {
+            
+            /* background-color: #3636af; */
+            background-image: url(https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&w=700);
+            grid-row-start: 1;
+            grid-row-end:3;
+            overflow: hidden;
+           background-repeat: no-repeat;
+        }
+        .box1container
+        {
+            /* height: 100px; */
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+
+            /* row-gap: 10px; */
+        }
+        .a:hover
+        {
+            background-image: url(https://images.pexels.com/photos/463684/pexels-photo-463684.jpeg?auto=compress&cs=tinysrgb&w=150);
+        }
+        .a
+        {
+            height: 100px;
+             width: 100px; 
+             border:2px solid #95ff00;
+            align-self: end;
+            margin: 10px;
+
+        }
+        .lbox1
+        {
+           
+            background-image: url(https://images.pexels.com/photos/2422286/pexels-photo-2422286.jpeg?auto=compress&cs=tinysrgb&w=150);
+           
+            /* background-color: #ffffff; */
+           
+        }
+        .lbox2
+        {
+           
+            background-image: url(https://images.pexels.com/photos/463684/pexels-photo-463684.jpeg?auto=compress&cs=tinysrgb&w=150);
+           
+          
+        }
+        .lbox3
+        {
+            background-image: url(https://images.pexels.com/photos/1049764/pexels-photo-1049764.jpeg?auto=compress&cs=tinysrgb&w=150);
+        }
+        .box2
+        {
+            /* background-color: #5caf36; */
+            background-image: url(https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=500);
+            
+        }
+        .box3
+        {
+            /* background-color: #af36af; */
+            background-image: url(https://images.pexels.com/photos/2325446/pexels-photo-2325446.jpeg?auto=compress&cs=tinysrgb&w=500);
+            
+        }
+        .box4
+        {
+            /* background-color: #af4636;
+             */
+           
+             background-image: url(https://images.pexels.com/photos/311012/pexels-photo-311012.jpeg?auto=compress&cs=tinysrgb&w=1000);
+             grid-column-start: 2;
+            grid-column-end: 4; 
+        }
+        .box5
+        {
+            background-image: url(https://images.pexels.com/photos/290595/pexels-photo-290595.jpeg?auto=compress&cs=tinysrgb&w=500);
+        }
+        .box6
+        {  background-image: url(https://images.pexels.com/photos/681335/pexels-photo-681335.jpeg?auto=compress&cs=tinysrgb&w=490);
+        }
+        .box7
+        {
+            background-image: url(https://images.pexels.com/photos/69344/pexels-photo-69344.jpeg?auto=compress&cs=tinysrgb&w=500&lazy=load);
+        }
+        .box8
+        {  background-image: url(https://images.pexels.com/photos/992734/pexels-photo-992734.jpeg?auto=compress&cs=tinysrgb&w=600);
+        }
+        .box9
+        {
+            background-image: url(https://images.pexels.com/photos/2440021/pexels-photo-2440021.jpeg?auto=compress&cs=tinysrgb&w=500);
+        }
+       
+        
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1 box1container">
+       
+            <div class="box lbox1 a"></div>
+            <div class="box lbox2 a"></div>
+            <div class="box lbox3 a"></div>
+        </div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+    </div>
+</body>
+</html>
